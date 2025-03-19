@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.UserProductController" stylesheets="@style.css" spacing="10" alignment="TOP_CENTER">
+
+    <!-- Header -->
+    <HBox fx:id="header" styleClass="header" alignment="CENTER" prefHeight="60">
+        <padding>
+            <Insets top="10" right="20" bottom="10" left="20"/>
+        </padding>
+        <Label text="ArtisanConnect - Boutique" styleClass="header-label" HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <!-- Main Content: Product Grid -->
+    <ScrollPane fitToWidth="true" pannable="true">
+        <GridPane fx:id="productGrid" hgap="10" vgap="10" alignment="CENTER" styleClass="grid-pane">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+        </GridPane>
+    </ScrollPane>
+    <!-- View Cart Button (This is where you add it) -->
+    <Button text="View Cart" onAction="#viewCart" styleClass="cart-button" maxWidth="200"/>
+
+    <!-- Footer -->
+    <HBox styleClass="footer" alignment="CENTER" prefHeight="40">
+        <Label text="© 2025 ArtisanConnect. Tous droits réservés." styleClass="footer-label"/>
+    </HBox>
+</VBox>

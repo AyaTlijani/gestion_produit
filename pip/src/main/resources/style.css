@@ -1,0 +1,83 @@
+/* Updated Styles */
+.header {
+    -fx-background-color: #717ec5; /* Light Yellow for a bright header */
+    -fx-padding: 10px;
+}
+
+.label {
+    -fx-text-fill: #473335; /* Dark Brown for readable text */
+    -fx-font-size: 16px;
+}
+
+.header-label {
+    -fx-text-fill: #473335; /* Dark Brown for bold header text */
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.footer {
+    -fx-background-color: #FFFFC7; /* Light Yellow for a consistent footer */
+    -fx-padding: 10px;
+}
+
+.footer-label {
+    -fx-text-fill: #473335; /* Dark Brown for footer text */
+    -fx-font-size: 12px;
+}
+
+.no-products-label, .error-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #B0413E; /* Red for error messages to stand out */
+}
+
+.grid-pane {
+    -fx-background-color: #ffffff; /* Dark Brown for a subtle grid background */
+}
+
+.product-card {
+    -fx-background-color: #75a1b3; /* Orange for a warm card background */
+    -fx-border-color: #548687; /* Teal for a distinct border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+    -fx-alignment: center;
+}
+
+.product-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+    -fx-cursor: hand; /* Change cursor to indicate clickable */
+    -fx-background-color: #b8bfdf; /* Slightly lighter orange on hover */
+}
+
+.product-name {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #473030; /* Dark Brown for readable names */
+    -fx-alignment: center;
+}
+
+.product-price {
+    -fx-font-size: 14px;
+    -fx-text-fill: #B0413E; /* Red for price emphasis */
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+/* New Styles for Product Details */
+.detail-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #473335; /* Dark Brown for details */
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-background-color: #548687; /* Teal for buttons */
+    -fx-text-fill: #FFFFC7; /* Light Yellow for button text */
+    -fx-padding: 5px 10px;
+}
+
+.button:hover {
+    -fx-background-color: #477B7D; /* Slightly darker teal on hover */
+    -fx-text-fill: #FFFFC7;
+}

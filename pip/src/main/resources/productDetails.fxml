@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.ProductDetailsController" stylesheets="@style.css" spacing="10" alignment="CENTER" prefWidth="400" prefHeight="550">
+
+    <HBox styleClass="header" alignment="CENTER" prefHeight="40">
+        <Label text="Détails du Produit" styleClass="header-label"/>
+    </HBox>
+
+    <VBox spacing="10" alignment="CENTER">
+        <ImageView fx:id="detailImageView" fitWidth="300" fitHeight="250" preserveRatio="true"/>
+        <Label fx:id="nameLabel" styleClass="product-name"/>
+        <Label fx:id="descriptionLabel" styleClass="detail-label" wrapText="true"/>
+        <Label fx:id="priceLabel" styleClass="product-price"/>
+        <Label fx:id="quantityLabel" styleClass="detail-label"/>
+        <Label fx:id="categoryLabel" styleClass="detail-label"/>
+        <Label fx:id="availabilityLabel" styleClass="detail-label"/>
+    </VBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Quantité à ajouter :" styleClass="detail-label"/>
+        <Spinner fx:id="quantitySpinner" min="1" max="100" initialValue="1" editable="true" prefWidth="80"/>
+        <Button fx:id="orderButton" text="Passer Commande" onAction="#placeOrder"/>
+        <Button text="Voir Panier" onAction="#viewCart"/>
+        <Button text="Fermer" onAction="#close" styleClass="button"/>
+    </HBox>
+</VBox>

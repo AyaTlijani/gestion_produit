@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.CartController"
+      spacing="10"
+      alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Cart List View -->
+    <ListView fx:id="cartListView" prefHeight="300" prefWidth="400"/>
+
+    <!-- Total Label -->
+    <Label fx:id="totalLabel" text="Total: $0.00"/>
+
+    <!-- Buttons -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="removeButton" text="Remove" onAction="#handleRemoveButtonClick"/>
+        <Button fx:id="buyNowButton" text="Buy Now" onAction="#buyNow"/> <!-- Added -->
+        <Button text="Back" onAction="#goBack"/>
+    </HBox>
+
+    <!-- Empty Cart Label (Initially hidden) -->
+    <Label fx:id="emptyCartLabel" text="Your cart is empty." visible="false"/>
+</VBox>
+

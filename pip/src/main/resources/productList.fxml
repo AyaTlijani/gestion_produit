@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.ProductListController" spacing="10" alignment="CENTER" stylesheets="@style.css" prefWidth="800">
+    <HBox fx:id="header" styleClass="header" alignment="CENTER" prefWidth="800">
+        <ImageView fx:id="logoImage" styleClass="logo-image">
+            <image>
+                <Image url="@images/logo.png" />
+            </image>
+        </ImageView>
+        <Label text="ArtisanConnect - Liste des Produits" styleClass="label" />
+    </HBox>
+
+    <HBox alignment="CENTER" prefWidth="800">
+        <Button text="Ajouter" onAction="#addProduit" fx:id="addButton" styleClass="button"/>
+    </HBox>
+    <ScrollPane fitToWidth="true" pannable="true" prefHeight="600">
+    <Accordion fx:id="categoryAccordion" prefWidth="800"/>
+    </ScrollPane>
+</VBox>

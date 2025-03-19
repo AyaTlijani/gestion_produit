@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.CheckoutController"
+      spacing="15" alignment="CENTER" prefWidth="400" prefHeight="500">
+    <Label text="Paiement" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="fullNameField" promptText="Nom complet" prefWidth="300"/>
+    <TextField fx:id="emailField" promptText="Email" prefWidth="300"/>
+    <TextField fx:id="phoneField" promptText="Téléphone" prefWidth="300"/>
+    <TextField fx:id="addressField" promptText="Adresse de livraison" prefWidth="300"/>
+
+    <ComboBox fx:id="paymentMethodCombo" promptText="Méthode de paiement" prefWidth="300"/>
+
+    <HBox spacing="10">
+        <TextField fx:id="cardNumberField" promptText="Numéro de carte (16 chiffres)" prefWidth="200"/>
+        <TextField fx:id="cvvField" promptText="CVV (3-4 chiffres)" prefWidth="80"/>
+    </HBox>
+
+    <DatePicker fx:id="deliveryDatePicker" promptText="Date de livraison souhaitée" prefWidth="300"/>
+
+    <Button text="Confirmer" onAction="#handlePayment"
+            style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+</VBox>
